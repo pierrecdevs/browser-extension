@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <title>%brand% testing development extension</title>
+  <base href="/popup/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <img class="baseline" src="%logo%" alt="brand logo" id="brand-logo">
+      </div>
+      <div>
+        <h1 id="brand">%brand%</h1>
+      </div>
+    </header>
+
+    <nav id="tab-container">
+      <ul id="tabs">
+      </ul>
+    </nav>
+
+    <h1>Form Utilties</h1>
+    <div id="snippets">
+    </div>
+    <div id="output"></div>
+  </div>
+
+  <script src="constants.js"></script>
+  <script src="popup.js"></script>
+  <script src="tabs/form-utilities/index.js"></script>
+</body>
+
+</html>

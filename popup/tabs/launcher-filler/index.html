@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <title>surex testing development extension</title>
+  <base href="/popup/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <img class="baseline" src="%logo%" alt="brand logo" id="brand-logo">
+      </div>
+      <div>
+        <h1 id="brand">%brand%</h1>
+      </div>
+    </header>
+
+    <nav id="tab-container">
+      <ul id="tabs">
+      </ul>
+    </nav>
+
+    <h1>Launcher filler</h1>
+    <details>
+      <summary role="button" class="contrast">Auto</summary>
+        <button id="form-filler-fill-vehicle">Fill Vehicle Form</button>
+        <button id="form-filler-fill-driver">Fill Driver Form</button>
+        <label for="form-filler-fill-submit-auto">
+          <input type="checkbox" name="submit-auto-form" id="form-filler-fill-submit-auto" role="switch"/>
+          Submit form
+        </label>
+    </details>
+
+    <details>
+      <summary role="button" class="contrast">Home</summary>
+        <button id="form-filler-fill-home">Fill Home Form</button>
+        <button id="form-filler-fill-occupants">Fill Occupants Form</button>
+        <label for="form-filler-fill-submit-home">
+          <input type="checkbox" name="submit-auto-form" id="form-filler-fill-submit-home" role="switch"/>
+          Submit form
+        </label>
+    </details>
+    <details>
+        <summary role="button" class="contrast">Discount</summary>
+        <button id="form-filler-fill-discount">Fill</button>
+      </details>
+  </div>
+
+  <script src="constants.js"></script>
+  <script src="popup.js"></script>
+  <script src="tabs/launcher-filler/index.js"></script>
+</body>
+
+</html>

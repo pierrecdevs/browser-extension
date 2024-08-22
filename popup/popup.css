@@ -1,0 +1,29 @@
+@import url('https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css');
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.w-full {
+    width: 100vw;
+}
+
+#tabs {
+    min-width: 400px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header img.baseline {
+    vertical-align: baseline;
+    padding-right: 1rem;
+}

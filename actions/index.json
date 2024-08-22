@@ -1,0 +1,6 @@
+{
+  "actions": [
+    "surex.fill.driver-page.js",
+    "surex.fill.vehicle-page.js"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "surex-extension",
+  "version": "1.0.0",
+  "description": "A small extensions to aid in tasks such as (but not limited to) autoform filling, run snippets, analysis of pages",
+  "main": "popup/popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pierre Chretien <it.guy.pierre@outlook.com>",
+  "license": "MIT"
+}

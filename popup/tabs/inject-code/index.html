@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <title>%brand% testing development extension</title>
+  <base href="/popup/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <img class="baseline" src="%logo%" alt="brand logo" id="brand-logo">
+      </div>
+      <div>
+        <h1 id="brand">%brand%</h1>
+      </div>
+    </header>
+
+    <nav id="tab-container">
+      <ul id="tabs">
+      </ul>
+    </nav>
+
+    <h1>Inject JS Code</h1>
+    <form id="inject-code" name="inject-code">
+      <div class="grid">
+        <label for="code">Write your custom JS here</label>
+        <textarea rows="10" cols="35" id="code" name="code"></textarea>
+      </div>
+      <div class="grid">
+        <button type="submit" id="inject-code-snippet">Inject</button>
+        <button id="reset" type="reset">Clear</button>
+      </div>
+    </form>
+    <div id="output"></div>
+  </div>
+  <script src="constants.js"></script>
+  <script src="popup.js"></script>
+  <script src="tabs/inject-code/index.js">
+  </script>
+</body>
+
+</html>

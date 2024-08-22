@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "surex testing development extension",
+  "description": "A test extention to help with quick testing, and profiling.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/icon-32.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["actions/*"],
+    "matches": ["<all_urls>"]
+  }]
+}
